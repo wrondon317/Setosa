@@ -11,6 +11,7 @@ import pickle
 import pandas as pd
 from flask import Flask, request
 from flask import Flask, request, jsonify, render_template
+from collections.abc import Mapping
 
 app=Flask(__name__)
 pickle_in = open("new_classifier.pkl","rb")
